@@ -1,0 +1,29 @@
+{
+  "name": "web scrape server",
+  "version": "1.0.0",
+  "description": "scrape a bit",
+  "private": true,
+  "main": "server/server.js",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mysql": "^2.18.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "client:dev": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "server": "nodemon -r dotenv/config server/server",
+    "dev": "concurrently \"npm:server\" \"npm:client:dev\"",
+    "prod": "concurrently \"npm:server\" \"npm:client:build\""
+  },
+  "author": "toabr",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+    "verbose": true,
+    "ignore": [
+        ".git",
+        "node_modules/**/node_modules",
+        "public",
+        "static",
+        "client",
+        "tests/api.rest"
+    ]
+}
