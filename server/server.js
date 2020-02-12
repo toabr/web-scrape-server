@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import apiRouter from './apiRouter.js';
 
 const app = express();
-const port = process.env.PORT_SERVER || 3001;
+const port = process.env.SERVER_PORT || 3001;
 
 // app.get('/', (req, res) => res.send('Hello World!'));
 app.listen(port, () => console.log(`Express listening on port ${port}!`));

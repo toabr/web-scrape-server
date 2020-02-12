@@ -4,9 +4,9 @@
 node_modules
 
 ### server
-tests/*
-static/*
-public/*
+tests
+static
+public
 
 # client
 client
